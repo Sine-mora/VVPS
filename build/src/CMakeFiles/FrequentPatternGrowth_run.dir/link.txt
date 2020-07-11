@@ -1,0 +1,1 @@
+/usr/bin/c++   -g   CMakeFiles/FrequentPatternGrowth_run.dir/main.cpp.o CMakeFiles/FrequentPatternGrowth_run.dir/FPGrowth/FPGrowth.cpp.o CMakeFiles/FrequentPatternGrowth_run.dir/DataComponent/DataComponent.cpp.o  -o FrequentPatternGrowth_run -lpthread 
