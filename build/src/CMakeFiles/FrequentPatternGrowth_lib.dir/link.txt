@@ -1,2 +1,0 @@
-/usr/bin/ar qc libFrequentPatternGrowth_lib.a  CMakeFiles/FrequentPatternGrowth_lib.dir/main.cpp.o CMakeFiles/FrequentPatternGrowth_lib.dir/FPGrowth/FPGrowth.cpp.o CMakeFiles/FrequentPatternGrowth_lib.dir/DataComponent/DataComponent.cpp.o
-/usr/bin/ranlib libFrequentPatternGrowth_lib.a

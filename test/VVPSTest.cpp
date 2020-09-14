@@ -1,5 +1,8 @@
 #include "gtest/gtest.h"
+#if defined(_WIN32) || defined(WIN32) 
+#define USING_WINDOWS
 #include <Windows.h>
+#endif
 #include <FPGrowth/FPGrowth.hpp>
 #include <DataComponent/DataComponent.h>
 
@@ -20,7 +23,7 @@ struct VVPSTestSuit
      * @brief m_dataBase - data base, constructed from the data, parsed
      * from a specified *.csv file.
      */
-     static FP::DataBase VVPSTestSuit:: m_dataBase;
+     static FP::DataBase m_dataBase;
 
     /**
      * @brief m_patternSet - holds the resulting pattern set, created
@@ -66,7 +69,11 @@ VVPSTestSuit::VVPSTestSuit()
 
     if(!VVPSTestSuit::s_isDataParsed)
     {
+#ifdef USING_WINDOWS
         m_dataBase = CreateDataBase("../../../../logs_BCS37_20181103.csv");
+#else
+        m_dataBase = CreateDataBase("../logs_BCS37_20181103.csv");
+#endif
         VVPSTestSuit::s_isDataParsed = true;
     }
 

@@ -1,1 +1,0 @@
-/usr/bin/c++   -g   CMakeFiles/FrequentPatternGrowth_test.dir/main.cpp.o CMakeFiles/FrequentPatternGrowth_test.dir/FPTest.cpp.o CMakeFiles/FrequentPatternGrowth_test.dir/VVPSTest.cpp.o  -o FrequentPatternGrowth_test ../src/libFrequentPatternGrowth_lib.a -lpthread ../lib/libgtestd.a -lpthread 
