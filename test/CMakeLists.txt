@@ -7,7 +7,8 @@ set(BINARY ${CMAKE_PROJECT_NAME}_test)
 set(FP_TEST_SOURCES
     ${CMAKE_CURRENT_SOURCE_DIR}/main.cpp
     ${CMAKE_CURRENT_SOURCE_DIR}/FPTest.cpp
-    ${CMAKE_CURRENT_SOURCE_DIR}/VVPSTest.cpp)
+    ${CMAKE_CURRENT_SOURCE_DIR}/VVPSTest.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/PhilippeFourierExampleTest.cpp)
 
 # Create executable BINARY
 add_executable(${BINARY} ${FP_TEST_SOURCES})

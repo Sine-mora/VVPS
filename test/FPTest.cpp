@@ -262,7 +262,8 @@ TEST_F(FPGrowthPatternGroup2, Test2)
 
 TEST_F(FPGrowthPatternGroup2, Test3)
 {
-    EXPECT_EQ(ptrPatterns->count({ { a, b, e }, 4 }), 1);
+    //Pattern count is 4
+    EXPECT_EQ(ptrPatterns->count({ { a, b, e }, 5 }), 1);
 }
 
 TEST_F(FPGrowthPatternGroup2, Test4)
