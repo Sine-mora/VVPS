@@ -1,5 +1,16 @@
 Текущият проект по ВВПС е тестван под Linux OS и Windows 10.
 Документацията към програмата е в папка docs.
+Изискване за Windows:
+1) Инсталиран Git и Git Bash: https://git-scm.com/download/win
+2) Инсталиран Visual Studio 2017/2019: https://visualstudio.microsoft.com/downloads/
+3) Инсталиран Cmake за Visual Studio: https://docs.microsoft.com/en-us/cpp/build/cmake-projects-in-visual-studio
+
+Начин за стартиране на проекта под Windows:
+1. Клониране на проекта от - git clone https://github.com/Sine-mora/VVPS.git
+2. Отваряне на новата папка "VVPS" с Visual Studio
+3. Избиране на Build All (F6)
+4. Избиране на FrequentPatternGrowth_test.exe от Select Startup Item
+
 Prerequisites - Linux based OS, cmake (sudo apt-get install cmake)
 Организация на папките:
 FrequentPatternVVPS/
