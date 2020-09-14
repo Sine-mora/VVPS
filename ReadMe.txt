@@ -1,4 +1,5 @@
-Текущата програма е тествана под Linux OS.
+Текущият проект по ВВПС е тестван под Linux OS и Windows 10.
+Документацията към програмата е в папка docs.
 Prerequisites - Linux based OS, cmake (sudo apt-get install cmake)
 Организация на папките:
 FrequentPatternVVPS/
