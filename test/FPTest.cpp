@@ -124,6 +124,7 @@ struct FPGrowthPatternGroup3 : public ::testing::Test
     }
 };
 
+
 TEST(MyTest, test1)
 {
     constexpr uint32_t value = 32;
@@ -135,6 +136,7 @@ TEST(MyTest, test1)
  * @param 1 - test fixture class name.
  * @param 2 - name of the current test.
  */
+
 TEST_F(FPGrowthPatternGroup1, Test1)
 {
     EXPECT_EQ(ptrPatterns->size(), 19);
@@ -359,7 +361,7 @@ TEST_F(FPGrowthPatternGroup2, Test20)
  */
 TEST_F(FPGrowthPatternGroup3, Test1)
 {
-        EXPECT_EQ(ptrPatterns->size(), 18);
+    EXPECT_EQ(ptrPatterns->size(), 18);
 }
 
 TEST_F(FPGrowthPatternGroup3, Test2)
@@ -369,7 +371,7 @@ TEST_F(FPGrowthPatternGroup3, Test2)
     the number of matches.
     Because all elements in a set container are unique, the function can only
     return 1 (if the element is found) or zero (otherwise). */
-    EXPECT_EQ(ptrPatterns->count({ { f }, 4 }), 1);
+   EXPECT_EQ(ptrPatterns->count({ { f }, 4 }), 1);
 }
 
 TEST_F(FPGrowthPatternGroup3, Test3)

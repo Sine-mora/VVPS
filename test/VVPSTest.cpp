@@ -64,8 +64,6 @@ static VVPSTestSuit g_vvps;
 
 VVPSTestSuit::VVPSTestSuit()
 {
-    //SetConsoleCP(1251);// установка кодовой страницы win-cp 1251 в поток ввода
-    //SetConsoleOutputCP(1251);
 
     if(!VVPSTestSuit::s_isDataParsed)
     {
@@ -130,7 +128,6 @@ FP::PatternSet VVPSTestSuit::CreatetPatternSet(uint64_t unMinRequiredTreshold)
 
 /** Unit Tests */
 
-//Pending update
 TEST(VVPSTestSuit, TestPatternParsing)
 {
     FP::PrintPatternSet(g_vvps.m_patternSet);
@@ -171,8 +168,8 @@ TEST(VVPSTestSuit, TestPattern5)
 
 TEST(VVPSTestSuit, TestPattern6)
 {
-    EXPECT_EQ(g_vvps.m_patternSet.count({ {"UserID_4774"}, 0 }), 1); /* False test Count is 1225. Irrelevant  */
-    std::cout << "UserID_4774 met: " << g_vvps.m_patternSet.size() << "\n";
+    EXPECT_EQ(g_vvps.m_patternSet.count({ {"UserID_4774"}, 0 }), 0); /* False test Count bellow min.Threshold  */
+    
 }
 
 TEST(VVPSTestSuit, TestPattern7)
@@ -183,7 +180,7 @@ TEST(VVPSTestSuit, TestPattern7)
 
 TEST(VVPSTestSuit, TestPattern8)
 {
-    EXPECT_EQ(g_vvps.m_patternSet.count({ {"UserID_2"}, 5 }), 1); /* Count is 1416 */
+    EXPECT_EQ(g_vvps.m_patternSet.count({ {"UserID_2"}, 5 }), 1); /* Count is 1416 or 1419 */
     
 }
 
